@@ -5,23 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MERN Ecommerce Internship</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=settings" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
   <script>
     tailwind.config = {
       theme: {
@@ -32,7 +31,6 @@
             tertiary: '#EA4335',
             quaternary: '#1F2937',
             quinary: '#5B21B6',
-
           },
           fontFamily: {
             sans: ['Poppins', 'sans-serif'],
@@ -49,17 +47,15 @@
   <header class="sticky top-0 shadow bg-gray-100 z-50">
     <div class="container mx-auto p-4">
       <div class="flex items-center justify-between">
-        <a href="#" class="text-xl font-semibold flex items-center space-x-1">
-          <span class="text-primary">Pasa </span>
-          <span class="text-tertiary">Le</span>
-          
-          
-          
-          <p class="text-gray-600 text-center">
-              
-            </p> 
-
-        </a>
+        <div class="flex flex-col">
+          <a href="#" class="text-xl font-semibold flex items-center space-x-1">
+            <span class="text-primary">Pasa </span>
+            <span class="text-tertiary">Le</span>
+          </a>
+          <p class="text-gray-600 text-sm">
+            Quality You Can Trust
+          </p> 
+        </div>
 
         <nav class="hidden md:flex space-x-4">
           <a href="#" class="text-quaternary hover:text-quinary">Home</a>
@@ -68,19 +64,16 @@
           <a href="#" class="text-quaternary hover:text-quinary">Category</a>
           <a href="#" class="text-quaternary hover:text-quinary">Testimonial</a>
           <a href="#" class="text-quaternary hover:text-quinary">About</a>
-
-          <!-- #region <a href="#" class="text-quaternary hover:text-purple-700 px-2 py-2">Add</a> -->
         </nav>
 
         <div class="hidden md:flex space-x-4 items-center">
           <a href="#" class="text-primary hover:text-purple-700 px-1 py-1">👤Profile</a>
- 
-          <i class="fa fa-shopping-cart text-secondary"></i>
-          
-          <span class="material-symbols-outlined">
-settings
-</span>
-          <i class="fa fa-setting text-secondary"></i>
+          <a href="#" class="text-secondary hover:text-purple-700">
+            <i class="fa fa-shopping-cart"></i>
+          </a>
+          <a href="#" class="text-secondary hover:text-purple-700">
+            <span class="material-symbols-outlined">settings</span>
+          </a>
         </div>
       </div>
     </div>
@@ -100,18 +93,17 @@ settings
             <p class="text-lg mb-8">Shop now and enjoy offers! Upto <span class="font-semibold">15% Discount</span></p>
 
             <div class="flex flex-col md:flex-row gap-y-3 gap-x-5">
-  <a href="#"
-     class="font-medium bg-white text-primary px-6 py-3 rounded-lg text-center 
-            hover:bg-yellow-200 hover:translate-x-1 transition-transform duration-200 shadow-xl">
-    Shop Now
-  </a>
-  <a href="#"
-     class="border-2 border-white text-white px-6 py-3 rounded-lg text-center 
-            hover:bg-yellow-200 hover:translate-x-1 transition-transform duration-200 shadow-xl">
-    View Categories
-  </a>
-</div>
-
+              <a href="#"
+                class="font-medium bg-white text-primary px-6 py-3 rounded-lg text-center 
+                      hover:bg-yellow-200 hover:translate-x-1 transition-transform duration-200 shadow-xl">
+                Shop Now
+              </a>
+              <a href="#"
+                class="border-2 border-white text-white px-6 py-3 rounded-lg text-center 
+                      hover:bg-yellow-200 hover:translate-x-1 transition-transform duration-200 shadow-xl">
+                View Categories
+              </a>
+            </div>
           </div>
 
           <!-- Image -->
@@ -185,8 +177,6 @@ settings
       </section>
 
     <!-- Products Section -->
-    
-    <!-- Content goes here -->
     <section id="products" class="py-16 bg-slate-100">
         <div class="container mx-auto px-4">
           <div class="mb-10">
@@ -203,9 +193,9 @@ settings
             <div class="bg-white rounded-lg shadow-md">
               <div class="relative">
                 <img
-                  src="./assets/images/products/watch.jpg"
+                  src="https://via.placeholder.com/300x200"
                   class="rounded-t-lg w-full h-48 object-cover"
-                  alt=""
+                  alt="Product Image"
                 />
                 <span
                   class="absolute top-2 left-2 bg-red-500 text-white rounded-full text-xs py-3 px-1"
@@ -246,9 +236,9 @@ settings
             <div class="bg-white rounded-lg shadow-md">
               <div class="relative">
                 <img
-                  src="./assets/images/products/watch.jpg"
+                  src="https://via.placeholder.com/300x200"
                   class="rounded-t-lg w-full h-48 object-cover"
-                  alt=""
+                  alt="Product Image"
                 />
                 <span
                   class="absolute top-2 left-2 bg-red-500 text-white rounded-full text-xs py-3 px-1"
@@ -289,9 +279,9 @@ settings
             <div class="bg-white rounded-lg shadow-md">
               <div class="relative">
                 <img
-                  src="./assets/images/products/watch.jpg"
+                  src="https://via.placeholder.com/300x200"
                   class="rounded-t-lg w-full h-48 object-cover"
-                  alt=""
+                  alt="Product Image"
                 />
                 <span
                   class="absolute top-2 left-2 bg-red-500 text-white rounded-full text-xs py-3 px-1"
@@ -332,181 +322,9 @@ settings
             <div class="bg-white rounded-lg shadow-md">
               <div class="relative">
                 <img
-                  src="./assets/images/products/watch.jpg"
+                  src="https://via.placeholder.com/300x200"
                   class="rounded-t-lg w-full h-48 object-cover"
-                  alt=""
-                />
-                <span
-                  class="absolute top-2 left-2 bg-red-500 text-white rounded-full text-xs py-3 px-1"
-                >
-                  -20%
-                </span>
-              </div>
-
-              <div class="p-4">
-                <h3 class="font-semibold text-xl">Apple Watch 2</h3>
-
-                <div class="text-yellow-500 text-xs py-2">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star-half"></i>
-
-                  <span class="text-gray-500">(265)</span>
-                </div>
-
-                <div class="flex justify-between">
-                  <div>
-                    <span class="text-primary font-bold mr-1 text-lg">
-                      $79.99
-                    </span>
-                    <span class="line-through text-gray-500 text-sm"
-                      >$99.99</span
-                    >
-                  </div>
-
-                  <button class="text-primary">
-                    <i class="fa fa-shopping-cart"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="bg-white rounded-lg shadow-md">
-              <div class="relative">
-                <img
-                  src="./assets/images/products/watch.jpg"
-                  class="rounded-t-lg w-full h-48 object-cover"
-                  alt=""
-                />
-                <span
-                  class="absolute top-2 left-2 bg-red-500 text-white rounded-full text-xs py-3 px-1"
-                >
-                  -20%
-                </span>
-              </div>
-
-              <div class="p-4">
-                <h3 class="font-semibold text-xl">Apple Watch 2</h3>
-
-                <div class="text-yellow-500 text-xs py-2">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star-half"></i>
-
-                  <span class="text-gray-500">(265)</span>
-                </div>
-
-                <div class="flex justify-between">
-                  <div>
-                    <span class="text-primary font-bold mr-1 text-lg">
-                      $79.99
-                    </span>
-                    <span class="line-through text-gray-500 text-sm"
-                      >$99.99</span
-                    >
-                  </div>
-
-                  <button class="text-primary">
-                    <i class="fa fa-shopping-cart"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="bg-white rounded-lg shadow-md">
-              <div class="relative">
-                <img
-                  src="./assets/images/products/watch.jpg"
-                  class="rounded-t-lg w-full h-48 object-cover"
-                  alt=""
-                />
-                <span
-                  class="absolute top-2 left-2 bg-red-500 text-white rounded-full text-xs py-3 px-1"
-                >
-                  -20%
-                </span>
-              </div>
-
-              <div class="p-4">
-                <h3 class="font-semibold text-xl">Apple Watch 2</h3>
-
-                <div class="text-yellow-500 text-xs py-2">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star-half"></i>
-
-                  <span class="text-gray-500">(265)</span>
-                </div>
-
-                <div class="flex justify-between">
-                  <div>
-                    <span class="text-primary font-bold mr-1 text-lg">
-                      $79.99
-                    </span>
-                    <span class="line-through text-gray-500 text-sm"
-                      >$99.99</span
-                    >
-                  </div>
-
-                  <button class="text-primary">
-                    <i class="fa fa-shopping-cart"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="bg-white rounded-lg shadow-md">
-              <div class="relative">
-                <img
-                  src="./assets/images/products/watch.jpg"
-                  class="rounded-t-lg w-full h-48 object-cover"
-                  alt=""
-                />
-                <span
-                  class="absolute top-2 left-2 bg-red-500 text-white rounded-full text-xs py-3 px-1"
-                >
-                  -20%
-                </span>
-              </div>
-
-              <div class="p-4">
-                <h3 class="font-semibold text-xl">Apple Watch 2</h3>
-
-                <div class="text-yellow-500 text-xs py-2">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star-half"></i>
-
-                  <span class="text-gray-500">(265)</span>
-                </div>
-
-                <div class="flex justify-between">
-                  <div>
-                    <span class="text-primary font-bold mr-1 text-lg">
-                      $79.99
-                    </span>
-                    <span class="line-through text-gray-500 text-sm"
-                      >$99.99</span
-                    >
-                  </div>
-
-                  <button class="text-primary">
-                    <i class="fa fa-shopping-cart"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="bg-white rounded-lg shadow-md">
-              <div class="relative">
-                <img
-                  src="./assets/images/products/watch.jpg"
-                  class="rounded-t-lg w-full h-48 object-cover"
-                  alt=""
+                  alt="Product Image"
                 />
                 <span
                   class="absolute top-2 left-2 bg-red-500 text-white rounded-full text-xs py-3 px-1"
@@ -557,8 +375,6 @@ settings
       </section>
 
     <!-- Popular Products Section -->
-    
-    <!-- Content goes here -->
     <section id="popular-products" class="py-16">
         <div class="container mx-auto px-4">
           <div class="mb-10">
@@ -572,12 +388,12 @@ settings
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="rounded-lg shadow-md">
+            <div class="rounded-lg shadow-md bg-white">
               <div class="relative">
                 <img
-                  src="./assets/images/products/airpods.jpg"
+                  src="https://via.placeholder.com/300x200"
                   class="rounded-t-lg w-full h-48 object-cover"
-                  alt=""
+                  alt="Airpods"
                 />
                 <span
                   class="absolute top-3 right-3 bg-red-500 text-white rounded-full text-xs px-3 py-1"
@@ -610,12 +426,12 @@ settings
               </div>
             </div>
 
-            <div class="rounded-lg shadow-md">
+            <div class="rounded-lg shadow-md bg-white">
               <div class="relative">
                 <img
-                  src="./assets/images/products/samsung.jpg"
+                  src="https://via.placeholder.com/300x200"
                   class="rounded-t-lg w-full h-48 object-cover"
-                  alt=""
+                  alt="Samsung Phone"
                 />
                 <span
                   class="absolute top-3 right-3 bg-red-500 text-white rounded-full text-xs px-3 py-1"
@@ -649,12 +465,12 @@ settings
               </div>
             </div>
 
-            <div class="rounded-lg shadow-md">
+            <div class="rounded-lg shadow-md bg-white">
               <div class="relative">
                 <img
-                  src="./assets/images/products/pixel.jpg"
+                  src="https://via.placeholder.com/300x200"
                   class="rounded-t-lg w-full h-48 object-cover"
-                  alt=""
+                  alt="Google Pixel"
                 />
                 <span
                   class="absolute top-3 right-3 bg-red-500 text-white rounded-full text-xs px-3 py-1"
@@ -687,12 +503,12 @@ settings
               </div>
             </div>
 
-            <div class="rounded-lg shadow-md">
+            <div class="rounded-lg shadow-md bg-white">
               <div class="relative">
                 <img
-                  src="./assets/images/products/airpods.jpg"
+                  src="https://via.placeholder.com/300x200"
                   class="rounded-t-lg w-full h-48 object-cover"
-                  alt=""
+                  alt="Airpods"
                 />
                 <span
                   class="absolute top-3 right-3 bg-red-500 text-white rounded-full text-xs px-3 py-1"
